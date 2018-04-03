@@ -33,7 +33,8 @@ samba-tool domain provision \
     --server-role=dc \
     --dns-backend=SAMBA_INTERNAL \
     $SAMBA_OPTIONS \
-    --option="bind interfaces only"=yes
+    --option="bind interfaces only"=yes \
+    --option="posix:eadb = /var/lib/samba/private/eadb.tdb"
 
 # Move smb.conf
 mv /etc/samba/smb.conf /var/lib/samba/private/smb.conf
