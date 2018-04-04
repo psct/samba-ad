@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 MAINTAINER ps@ct.heise.de
 # inspired by pitkley/samba-ad-dc
 ENV DEBIAN_FRONTEND noninteractive
